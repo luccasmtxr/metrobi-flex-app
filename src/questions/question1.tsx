@@ -1,7 +1,6 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-
 const codeString = `function findDuplicates(arr) {
   const seen = new Set();       // keeps track of unique items
   const duplicates = new Set(); // keeps track of duplicates
@@ -29,8 +28,8 @@ export const Question1 = (
     <h3>Find Duplicates in an Array</h3>
     <p>
       This function iterates through an array, tracks unique values with a{" "}
-      <code>Set</code>, and collects duplicates into another{" "}
-      <code>Set</code>. Finally, it returns the duplicates as an array.
+      <code>Set</code>, and collects duplicates into another <code>Set</code>.
+      Finally, it returns the duplicates as an array.
     </p>
 
     <SyntaxHighlighter language="javascript" style={atomDark}>
@@ -38,4 +37,3 @@ export const Question1 = (
     </SyntaxHighlighter>
   </div>
 );
-

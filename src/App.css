@@ -35,7 +35,9 @@
   font-size: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
 }
 
 .header {
@@ -79,7 +81,9 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
   font-size: 1rem;
 }
 
@@ -95,7 +99,7 @@
 }
 .main-content {
   flex: 3;
-  background: #FFC270;
+  background: #ffc270;
 }
 .extra-content {
   flex: 1;

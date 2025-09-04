@@ -38,9 +38,9 @@ export const Question5 = (
   <div>
     <h3>Egg Dropping Problem </h3>
     <p>
-      The optimal strategy is to drop the first egg in decreasing steps
-      (14, 27, 39, …) and use the second egg linearly once the first breaks.
-      This ensures a worst-case of <strong>14 drops</strong>.
+      The optimal strategy is to drop the first egg in decreasing steps (14, 27,
+      39, …) and use the second egg linearly once the first breaks. This ensures
+      a worst-case of <strong>14 drops</strong>.
     </p>
 
     <SyntaxHighlighter language="javascript" style={atomDark}>

@@ -2,8 +2,14 @@ import { useState } from "react";
 import Modal from "./components/modal";
 import "./App.css";
 
-import { Question1, Question2, Question4, Question5, Question6, Question7 } from "./questions";
-
+import {
+  Question1,
+  Question2,
+  Question4,
+  Question5,
+  Question6,
+  Question7,
+} from "./questions";
 
 function App() {
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(
@@ -28,11 +34,7 @@ function App() {
     <div className="app-root">
       <div className="app">
         {/* Header */}
-        <header
-          className="header"
-        >
-          Header
-        </header>
+        <header className="header">Header</header>
 
         {/* Core */}
         <div className="core">
@@ -41,7 +43,7 @@ function App() {
               className="hero"
               onClick={() => openModal("Question 1", Question1, "page")}
             >
-              Question 1 
+              Question 1
             </div>
 
             <div
@@ -73,7 +75,7 @@ function App() {
         <div className="related">
           <div
             className="related-images"
-            onClick={() => openModal("Question 6", <Question6/>, "page")}
+            onClick={() => openModal("Question 6", <Question6 />, "page")}
           >
             Question 6
           </div>
@@ -87,11 +89,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer
-          className="footer"
-        >
-          Footer
-        </footer>
+        <footer className="footer">Footer</footer>
       </div>
 
       {/* Modal */}

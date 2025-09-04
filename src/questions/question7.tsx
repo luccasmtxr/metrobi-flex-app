@@ -30,8 +30,9 @@ export const Question7 = (
   <div>
     <h3>Unbounded Knapsack: Carrot Bag Problem</h3>
     <p>
-      We want to fill the bag to maximize total value. Since carrots are unlimited,
-      this is solved with the <strong>unbounded knapsack DP algorithm</strong>.
+      We want to fill the bag to maximize total value. Since carrots are
+      unlimited, this is solved with the{" "}
+      <strong>unbounded knapsack DP algorithm</strong>.
     </p>
 
     <SyntaxHighlighter language="javascript" style={atomDark}>
