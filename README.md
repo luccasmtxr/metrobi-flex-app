@@ -28,6 +28,36 @@ npm install
 npm run dev
 ```
 
+## 🐳 Running with Docker
+
+You can also build and run this app inside a Docker container.
+
+### 1. Build the Docker image
+
+```bash
+docker build -t metrobi-flex-app .
+```
+
+### 2. Run the container
+
+```bash
+docker run -p 3000:3000 metrobi-flex-app
+```
+
+### 3. Stop the container
+
+## List running containers
+
+```bash
+docker ps
+```
+
+## Stop it
+
+```bash
+docker stop <container_id>
+```
+
 Open your browser at [http://localhost:5173](http://localhost:5173) to see the app running.
 
 ## 🖼️ Project Overview
