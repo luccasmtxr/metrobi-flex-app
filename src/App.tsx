@@ -1,13 +1,13 @@
 import { useState } from "react";
-import  Modal from "./components/modal";
+import Modal from "./components/modal";
 import "./App.css";
 
 import { Question1 } from "./questions";
 
-
-
 function App() {
-  const [modalContent, setModalContent] = useState<React.ReactNode | null>(null);
+  const [modalContent, setModalContent] = useState<React.ReactNode | null>(
+    null
+  );
   const [modalTitle, setModalTitle] = useState("");
   const [modalVariant, setModalVariant] = useState<"code" | "page">("code");
 
@@ -55,9 +55,7 @@ function App() {
           <div className="right-column">
             <div
               className="main-content"
-              onClick={() =>
-                openModal("Main Content", Question1, "page")
-              }
+              onClick={() => openModal("Main Content", Question1, "page")}
             >
               Main content
             </div>
@@ -75,18 +73,14 @@ function App() {
         <div className="related">
           <div
             className="related-images"
-            onClick={() =>
-              openModal("Related Images", Question1, "page")
-            }
+            onClick={() => openModal("Related Images", Question1, "page")}
           >
             Related Images
           </div>
 
           <div
             className="related-posts"
-            onClick={() =>
-              openModal("Related Posts", Question1, "code")
-            }
+            onClick={() => openModal("Related Posts", Question1, "code")}
           >
             Related Posts
           </div>

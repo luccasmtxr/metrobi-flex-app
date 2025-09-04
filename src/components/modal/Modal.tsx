@@ -8,7 +8,12 @@ interface ModalProps {
   variant?: "code" | "page"; // default = "code"
 }
 
-export default function Modal({ title, onClose, children, variant = "code" }: ModalProps) {
+export default function Modal({
+  title,
+  onClose,
+  children,
+  variant = "code",
+}: ModalProps) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div
