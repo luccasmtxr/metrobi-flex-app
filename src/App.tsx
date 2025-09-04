@@ -30,7 +30,6 @@ function App() {
         {/* Header */}
         <header
           className="header"
-          onClick={() => openModal("Header", Question1, "code")}
         >
           Header
         </header>
@@ -90,7 +89,6 @@ function App() {
         {/* Footer */}
         <footer
           className="footer"
-          onClick={() => openModal("Footer", Question1, "code")}
         >
           Footer
         </footer>
