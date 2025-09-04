@@ -1,8 +1,10 @@
 import { useState } from "react";
 import  Modal from "./components/modal";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import "./App.css";
+
+import { Question1 } from "./questions";
+
+
 
 function App() {
   const [modalContent, setModalContent] = useState<React.ReactNode | null>(null);
@@ -19,9 +21,7 @@ function App() {
     setModalVariant(variant);
   };
 
-  const closeModal = () => {
-    setModalContent(null);
-  };
+  const closeModal = () => setModalContent(null);
 
   return (
     <div className="app-root">
@@ -29,17 +29,7 @@ function App() {
         {/* Header */}
         <header
           className="header"
-          onClick={() =>
-            openModal(
-              "Header Code Example",
-              <SyntaxHighlighter language="tsx" style={atomDark}>
-{`function Header() {
-  return <header>Header</header>;
-}`}
-              </SyntaxHighlighter>,
-              "code"
-            )
-          }
+          onClick={() => openModal("Header", Question1, "code")}
         >
           Header
         </header>
@@ -49,34 +39,14 @@ function App() {
           <div className="left-column">
             <div
               className="hero"
-              onClick={() =>
-                openModal(
-                  "Hero Page",
-                  <div>
-                    <h3>Hero Section</h3>
-                    <p>This is a full page modal example for the Hero.</p>
-                  </div>,
-                  "page"
-                )
-              }
+              onClick={() => openModal("Hero", Question1, "page")}
             >
               Hero
             </div>
 
             <div
               className="sidebar"
-              onClick={() =>
-                openModal(
-                  "Sidebar Code Example",
-                  <SyntaxHighlighter language="css" style={atomDark}>
-{`.sidebar {
-  background: greenyellow;
-  flex: 3;
-}`}
-                  </SyntaxHighlighter>,
-                  "code"
-                )
-              }
+              onClick={() => openModal("Sidebar", Question1, "code")}
             >
               Sidebar
             </div>
@@ -86,17 +56,7 @@ function App() {
             <div
               className="main-content"
               onClick={() =>
-                openModal(
-                  "Main Content Page",
-                  <div>
-                    <h3>Main Content</h3>
-                    <p>
-                      This could render any JSX like a React page with lists,
-                      forms, or components.
-                    </p>
-                  </div>,
-                  "page"
-                )
+                openModal("Main Content", Question1, "page")
               }
             >
               Main content
@@ -104,15 +64,7 @@ function App() {
 
             <div
               className="extra-content"
-              onClick={() =>
-                openModal(
-                  "Extra Content Code Example",
-                  <SyntaxHighlighter language="javascript" style={atomDark}>
-{`console.log("Hello from extra content!");`}
-                  </SyntaxHighlighter>,
-                  "code"
-                )
-              }
+              onClick={() => openModal("Extra Content", Question1, "code")}
             >
               Extra content
             </div>
@@ -124,14 +76,7 @@ function App() {
           <div
             className="related-images"
             onClick={() =>
-              openModal(
-                "Related Images Page",
-                <div>
-                  <h3>Related Images</h3>
-                  <p>Here we could render a gallery component or image grid.</p>
-                </div>,
-                "page"
-              )
+              openModal("Related Images", Question1, "page")
             }
           >
             Related Images
@@ -140,16 +85,7 @@ function App() {
           <div
             className="related-posts"
             onClick={() =>
-              openModal(
-                "Related Posts Code Example",
-                <SyntaxHighlighter language="json" style={atomDark}>
-{`[
-  { "id": 1, "title": "First Post" },
-  { "id": 2, "title": "Second Post" }
-]`}
-                </SyntaxHighlighter>,
-                "code"
-              )
+              openModal("Related Posts", Question1, "code")
             }
           >
             Related Posts
@@ -159,15 +95,7 @@ function App() {
         {/* Footer */}
         <footer
           className="footer"
-          onClick={() =>
-            openModal(
-              "Footer Code Example",
-              <SyntaxHighlighter language="html" style={atomDark}>
-{`<footer>Footer Section</footer>`}
-              </SyntaxHighlighter>,
-              "code"
-            )
-          }
+          onClick={() => openModal("Footer", Question1, "code")}
         >
           Footer
         </footer>
