@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# Metrobi Flex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **React + Vite + TypeScript** project that demonstrates solutions to a series of algorithmic and logical challenges. The main page serves as a **visual dashboard**, where each section is clickable and opens a modal with either:
 
-Currently, two official plugins are available:
+- A **code solution** (with syntax highlighting), or
+- An **interactive demo** (like Zeno’s Paradox of Achilles and the Tortoise).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### 1. Clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+git clone https://github.com/luccasmtxr/metrobi-flex-app.git
+cd metrobi-flex-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+Make sure you have **Node.js 22** installed, then run:
 
-export default tseslint.config([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+```bash
+npm install
 ```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser at [http://localhost:5173](http://localhost:5173) to see the app running.
+
+## 🖼️ Project Overview
+
+The **main page** is structured like a grid of sections:
+
+- **Header**
+- **Hero**
+- **Sidebar**
+- **Main Content**
+- **Extra Content**
+- **Related Images**
+- **Related Posts**
+- **Footer**
+
+Each section besides the header and the footer is **clickable** and opens a modal:
+
+- **Code Questions** → display the problem description and a syntax-highlighted solution.
+- **Interactive Questions** → display live demos (e.g., Zeno’s Paradox animation).
+
+This makes the app a **self-contained, interactive solution showcase**.
+
+## 📦 Tech Stack
+
+- **React 19**
+- **Vite (TypeScript + SWC)**
+- **Lucide Icons** (UI icons like close and copy)
+- **react-syntax-highlighter** (for pretty code blocks)
+- **CSS Flexbox** (for layout)
+
+## 🛠️ Scripts
+
+- `npm run dev` → start local dev server
+- `npm run build` → build for production
+- `npm run preview` → preview built app
+- `npm run prettier:check` → run Prettier validation
+- `npm run prettier:write` → run Prettier format
