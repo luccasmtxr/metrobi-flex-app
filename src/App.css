@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+  height: 80%;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+/* Header & Footer */
+.header,
+.footer {
+  padding: 1rem;
+}
+
+.header {
+  background: #00c0ff;
+  flex: 0 0 10%;
+}
+
+.footer {
+  background: #ff9800;
+  flex: 0 0 10%;
+}
+
+/* Core layout */
+.core {
+  display: flex;
+  flex: 1;
+  gap: 0.25rem;
+}
+
+.left-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hero {
+  flex: 2;
+  background: plum;
+}
+
+.sidebar {
+  flex: 3;
+  background: greenyellow;
+}
+
+.right-column {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.main-content {
+  flex: 3;
+  background: #ff9800;
+}
+
+.extra-content {
+  flex: 1;
+  background: grey;
+}
+
+/* Related section */
+.related {
+  display: flex;
+  gap: 0.25rem;
+  flex: 0 0 15%;
+}
+
+.related-images {
+  flex: 3;
+  background: green;
+}
+
+.related-posts {
+  flex: 1;
+  background: pink;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
