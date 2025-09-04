@@ -1,0 +1,63 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Code modal (smaller, like a snippet box) */
+.modal-box.code {
+  padding: 1rem 1.5rem;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+/* Page modal (bigger, but still centered — not full screen) */
+.modal-box.page {
+  padding: 1.5rem 2rem;
+  width: 900px;
+  max-width: 95%;
+  max-height: 90%;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Content */
+.modal-content {
+  flex: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
