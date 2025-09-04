@@ -96,3 +96,14 @@
   flex: 1;
   background: pink;
 }
+
+.header,
+.footer,
+.hero,
+.sidebar,
+.main-content,
+.extra-content,
+.related-images,
+.related-posts {
+  cursor: pointer;
+}

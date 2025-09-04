@@ -39,9 +39,9 @@ function App() {
           <div className="left-column">
             <div
               className="hero"
-              onClick={() => openModal("Hero", Question1, "page")}
+              onClick={() => openModal("Question 1", Question1, "page")}
             >
-              Hero
+              Question 1 
             </div>
 
             <div
