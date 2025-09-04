@@ -107,3 +107,51 @@
 .related-posts {
   cursor: pointer;
 }
+
+.track {
+  position: relative;
+  height: 120px;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  margin: 2rem auto;
+  width: 90%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.achilles-circle,
+.tortoise-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.achilles-circle {
+  background-color: blue;
+  left: 0;
+}
+
+.tortoise-circle {
+  background-color: green;
+  left: 0;
+}
+
+.zeno-icon-btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #0077ff;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zeno-icon-btn:hover {
+  background-color: #005fcc;
+}
+
