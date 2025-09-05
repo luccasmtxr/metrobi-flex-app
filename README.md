@@ -28,6 +28,8 @@ npm install
 npm run dev
 ```
 
+Open your browser at [http://localhost:5173](http://localhost:5173) to see the app running.
+
 ## 🐳 Running with Docker
 
 You can also build and run this app inside a Docker container.
@@ -57,8 +59,6 @@ docker ps
 ```bash
 docker stop <container_id>
 ```
-
-Open your browser at [http://localhost:5173](http://localhost:5173) to see the app running.
 
 ## 🖼️ Project Overview
 
